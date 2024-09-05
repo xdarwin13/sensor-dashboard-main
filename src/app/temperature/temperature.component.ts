@@ -37,9 +37,14 @@ export class TemperatureComponent implements OnInit, OnDestroy {
           {
             data: this.temperatureData,
             label: 'Temperatura',
-            fill: true,
-            borderColor: '#42A5F5',
-            tension: 0.1
+            fill: true, // Activar el relleno debajo de la línea
+            backgroundColor: 'rgba(255, 99, 132, 0.2)', // Color del fondo (relleno debajo de la línea)
+            borderColor: 'rgba(255, 99, 132, 1)', // Color de la línea
+            pointBackgroundColor: 'rgba(54, 162, 235, 1)', // Color de los puntos
+            pointBorderColor: '#fff', // Color del borde de los puntos
+            pointHoverBackgroundColor: '#fff', // Color del punto al pasar el ratón
+            pointHoverBorderColor: 'rgba(54, 162, 235, 1)', // Color del borde del punto al pasar el ratón
+            tension: 0.1 // Suavidad de la línea
           }
         ]
       },
@@ -47,7 +52,30 @@ export class TemperatureComponent implements OnInit, OnDestroy {
         responsive: true,
         scales: {
           y: {
-            beginAtZero: true
+            beginAtZero: true,
+            grid: {
+              color: 'rgba(200, 200, 200, 0.5)' // Color de las líneas del eje Y
+            },
+            ticks: {
+              color: 'white', // Color de los números del eje Y
+              padding: 10 // Espaciado entre los números y las líneas del eje Y
+            }
+          },
+          x: {
+            grid: {
+              color: 'red' // Color de las líneas del eje Y
+            },
+            ticks: {
+              color: 'white', // Color de los números del eje X
+              padding: 10 // Espaciado entre los números y las líneas del eje X
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            labels: {
+              color: 'white' // Color del texto de la leyenda
+            }
           }
         }
       }
