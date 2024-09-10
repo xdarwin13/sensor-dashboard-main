@@ -13,6 +13,10 @@ import { HomeComponent } from './home/home.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { Cuadro1Component } from './cuadro1/cuadro1.component';
+import { Cuadro2Component } from './cuadro2/cuadro2.component';
+import { Cuadro3Component } from './cuadro3/cuadro3.component';
+import { Cuadro4Component } from './cuadro4/cuadro4.component';
 
 
 
@@ -23,6 +27,10 @@ import { FooterComponent } from './components/layout/footer/footer.component';
     HumidityComponent,
     HomeComponent,
     FooterComponent,
+    Cuadro1Component,
+    Cuadro2Component,
+    Cuadro3Component,
+    Cuadro4Component,
     
   ],
   imports: [
