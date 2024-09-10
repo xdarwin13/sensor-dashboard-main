@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SensorDataService {
-  private baseUrl = 'http://192.168.1.40'; // Reemplaza con la IP de tu ESP32
+  private baseUrl = 'http://172.20.10.3'; // Reemplaza con la IP de tu ESP32
 
   constructor(private http: HttpClient) { }
 

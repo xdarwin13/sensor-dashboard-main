@@ -99,7 +99,7 @@ export class TemperatureComponent implements OnInit, OnDestroy {
         // Verificar si la temperatura alcanza los 50 grados para enviar una notificación de riesgo
         
       }
-      if (data.temperature >= 32) {
+      if (data.temperature >= 40) {
         this.sendRiskNotification();
       }
     });
@@ -109,7 +109,7 @@ export class TemperatureComponent implements OnInit, OnDestroy {
     this.messageService.add({
       key: 'customToast', // Clave para usar la plantilla personalizada
       summary: '⚠️ Advertencia de Temperatura',
-      detail: '¡La temperatura ha alcanzado los 50 grados o más!',
+      detail: '¡La temperatura ha alcanzado los 40 grados o más!',
       life: 2000, // Duración de la notificación en milisegundos
       styleClass: 'custom-toast', // Clase de estilo personalizada
     });

@@ -12,13 +12,18 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { HomeComponent } from './home/home.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { FooterComponent } from './components/layout/footer/footer.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TemperatureComponent,
     HumidityComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
