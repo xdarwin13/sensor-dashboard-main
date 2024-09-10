@@ -12,10 +12,21 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { HomeComponent } from './components/layout/home/home.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import { Cuadro1Component } from './components/cuadro1/cuadro1.component';
-import { Cuadro2Component } from './components/cuadro2/cuadro2.component';
-import { Cuadro3Component } from './components/cuadro3/cuadro3.component';
-import { Cuadro4Component } from './components/cuadro4/cuadro4.component';
+import { TEMP1Component } from './components/temp1/temp1.component';
+import { TEMP2Component } from './components/temp2/temp2.component';
+import { TEMP3Component } from './components/temp3/temp3.component';
+import { HUME1Component } from './components/hume1/hume1.component';
+import { HUME2Component } from './components/hume2/hume2.component';
+import { HUME3Component } from './components/hume3/hume3.component';
+import { HUME4Component } from './components/hume4/hume4.component';
+import { TEMP4Component } from './components/temp4/temp4.component';
+import { TEMPYHUMEComponent } from './components/layout/tempyhume/tempyhume.component';
+import { TEMPYHUME1Component } from './components/tempyhume1/tempyhume1.component';
+import { TEMPYHUME2Component } from './components/tempyhume2/tempyhume2.component';
+import { TEMPYHUME3Component } from './components/tempyhume3/tempyhume3.component';
+import { TEMPYHUME4Component } from './components/tempyhume4/tempyhume4.component';
+
+
 
 
 
@@ -25,10 +36,21 @@ import { Cuadro4Component } from './components/cuadro4/cuadro4.component';
     TemperatureComponent,
     HumidityComponent,
     HomeComponent,
-    Cuadro1Component,
-    Cuadro2Component,
-    Cuadro3Component,
-    Cuadro4Component,
+    TEMP1Component,
+    TEMP2Component,
+    TEMP3Component,
+    HUME1Component,
+    HUME2Component,
+    HUME3Component,
+    HUME4Component,
+    TEMP4Component,
+    TEMPYHUMEComponent,
+    TEMPYHUME1Component,
+    TEMPYHUME2Component,
+    TEMPYHUME3Component,
+    TEMPYHUME4Component,
+
+
     
   ],
   imports: [

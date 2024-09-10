@@ -1,0 +1,10 @@
+<div class="container" style="color: white;">
+    <h2>Temperatura y Humedad Actual 3</h2>
+    <p>Temperatura: {{ temperatureData.length > 0 ? temperatureData[temperatureData.length - 1] + ' °C' : 'No disponible' }}</p>
+    <p>Humedad: {{ humidityData.length > 0 ? humidityData[humidityData.length - 1] + ' %' : 'No disponible' }}</p>
+    <div style="display: block;">
+      <canvas id="combinedChart2"></canvas>
+    </div>
+    <p-toast key="customToast" position="top-right"></p-toast>
+  </div>
+
