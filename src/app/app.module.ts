@@ -6,17 +6,16 @@ import { NgChartsModule } from 'ng2-charts'; // Importa NgChartsModule aquí
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TemperatureComponent } from './temperature/temperature.component';
-import { HumidityComponent } from './humidity/humidity.component';
+import { TemperatureComponent } from './components/layout/temperature/temperature.component';
+import { HumidityComponent } from './components/layout/humidity/humidity.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/layout/home/home.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import { FooterComponent } from './components/layout/footer/footer.component';
-import { Cuadro1Component } from './cuadro1/cuadro1.component';
-import { Cuadro2Component } from './cuadro2/cuadro2.component';
-import { Cuadro3Component } from './cuadro3/cuadro3.component';
-import { Cuadro4Component } from './cuadro4/cuadro4.component';
+import { Cuadro1Component } from './components/cuadro1/cuadro1.component';
+import { Cuadro2Component } from './components/cuadro2/cuadro2.component';
+import { Cuadro3Component } from './components/cuadro3/cuadro3.component';
+import { Cuadro4Component } from './components/cuadro4/cuadro4.component';
 
 
 
@@ -26,7 +25,6 @@ import { Cuadro4Component } from './cuadro4/cuadro4.component';
     TemperatureComponent,
     HumidityComponent,
     HomeComponent,
-    FooterComponent,
     Cuadro1Component,
     Cuadro2Component,
     Cuadro3Component,

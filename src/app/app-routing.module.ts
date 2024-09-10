@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TemperatureComponent } from './temperature/temperature.component';
-import { HumidityComponent } from './humidity/humidity.component';
-import { HomeComponent } from './home/home.component';
+import { TemperatureComponent } from './components/layout/temperature/temperature.component';
+import { HumidityComponent } from './components/layout/humidity/humidity.component';
+import { HomeComponent } from './components/layout/home/home.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent},

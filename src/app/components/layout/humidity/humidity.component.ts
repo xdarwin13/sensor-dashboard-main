@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { SensorDataService } from '../services/sensor-data.service';
+import { SensorDataService } from '../../../services/sensor-data.service';
 import { interval, Subscription } from 'rxjs';
 import { Chart, registerables } from 'chart.js';
 
