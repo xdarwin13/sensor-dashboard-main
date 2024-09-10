@@ -21,8 +21,8 @@ import { TEMPYHUME4Component } from './components/tempyhume4/tempyhume4.componen
 
 const routes: Routes = [
   { path: "", component: HomeComponent},
-  { path: 'temperature', component: TEMPYHUME4Component },
-  { path: 'humidity', component: HUME4Component },
+  { path: 'temperature', component: TemperatureComponent },
+  { path: 'humidity', component: HumidityComponent },
   { path: '', redirectTo: '/temperature', pathMatch: 'full' },
 ];
 
