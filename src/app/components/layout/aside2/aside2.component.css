@@ -1,0 +1,6 @@
+.aside-left img {
+    width:  20%;
+    height: 20%;
+    transform: scale(1.33);
+    float: right
+}

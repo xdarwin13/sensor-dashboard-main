@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr; /* Agrega otra columna para el aside derecho */
+    grid-template-areas:
+    "aside-left section  section  section  section aside-right"  /* aside derecho en la primera fila */
+    "aside-left  section section section section aside-right"  /* aside derecho en la segunda fila */
+    "aside-left footer  footer  footer  footer aside-right"; /* Footer ocupa toda la última fila */
+    grid-template-rows: 20% 70% 10%; /* Mismas alturas para las filas */
+    height: 98vh;
+    gap: 0px; /* Espaciado entre celdas */
+}
+
+aside.aside-left {
+    grid-area: aside-left; /* Asegúrate de que el nombre del área coincida */
+    
+}
+
+aside.aside-right {
+    grid-area: aside-right; /* Asegúrate de que el nombre del área coincida */
+    
+}
+
+section {
+    grid-area: section; /* Asegúrate de que el nombre del área coincida */
+    
+}
+
+footer {
+    grid-area: footer; /* Asegúrate de que el nombre del área coincida */
+    
+}
