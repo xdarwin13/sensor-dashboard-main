@@ -20,11 +20,11 @@ import { TEMPYHUME4Component } from './components/tempyhume4/tempyhume4.componen
 
 
 const routes: Routes = [
-  { path: "", component: HomeComponent},
+  { path: '', component: HomeComponent }, // Ruta para la página de inicio
   { path: 'temperature', component: TemperatureComponent },
   { path: 'humidity', component: HumidityComponent },
   { path: 'tempyhume', component: TEMPYHUMEComponent },
-  { path: '', redirectTo: '/temperature', pathMatch: 'full' },
+  { path: '**', redirectTo: '' } 
 ];
 
 @NgModule({
