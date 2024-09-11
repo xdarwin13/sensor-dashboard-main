@@ -25,6 +25,9 @@ import { TEMPYHUME1Component } from './components/tempyhume1/tempyhume1.componen
 import { TEMPYHUME2Component } from './components/tempyhume2/tempyhume2.component';
 import { TEMPYHUME3Component } from './components/tempyhume3/tempyhume3.component';
 import { TEMPYHUME4Component } from './components/tempyhume4/tempyhume4.component';
+import { AsideComponent } from './components/layout/aside/aside.component';
+import { Aside2Component } from './components/layout/aside2/aside2.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 
 
@@ -49,6 +52,9 @@ import { TEMPYHUME4Component } from './components/tempyhume4/tempyhume4.componen
     TEMPYHUME2Component,
     TEMPYHUME3Component,
     TEMPYHUME4Component,
+    AsideComponent,
+    Aside2Component,
+    FooterComponent,
 
 
     

@@ -4,26 +4,24 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css'] // Corregido: styleUrls en lugar de styleUrl
 })
 export class HomeComponent {
 
   constructor(private router: Router) { }
 
-
-  irAtemperatura(): void{
+  irAtemperatura(): void {
     console.log('ir a temperatura');
-     this.router.navigate(['/temperature']);
+    this.router.navigate(['temperature']);
   }
 
-  irAhumedad(): void{
+  irAhumedad(): void {
     console.log('ir a humedad');
-     this.router.navigate(['/humidity']);
+    this.router.navigate(['humidity']);
   }
 
-  irTempyHume(): void{
+  irTempyHume(): void {
     console.log('ir a tempyhume');
-     this.router.navigate(['/tempyhume']);
+    this.router.navigate(['tempyhume']);
   }
-  
 }
