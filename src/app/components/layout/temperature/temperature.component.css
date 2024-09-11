@@ -1,26 +1,27 @@
-.custom-toast {
-    background-color: #ffcc00 !important; /* Color de fondo amarillo brillante */
-    color: #333 !important; /* Color de texto */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 8px !important; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la notificación */
-    animation: slide-in 0.5s ease-out; /* Animación de entrada */
-  }
-  
-  /* Animación personalizada */
-  @keyframes slide-in {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  grid-template-rows: 1fr 1fr;    /* Dos filas iguales */
+  gap: 2px; /* Espacio entre las celdas */
+  height: 98vh;
+}
 
-  .text-white {
-    color: white;
-  }
-  
-  
+.temp1 {
+  grid-area: 1 / 1 / 2 / 2; /* Primera fila, primera columna */
+  border: 1px solid white;
+}
+
+.temp2 {
+  grid-area: 1 / 2 / 2 / 3; /* Primera fila, segunda columna */
+  border: 1px solid white;
+}
+
+.temp3 {
+  grid-area: 2 / 1 / 3 / 2; /* Segunda fila, primera columna */
+  border: 1px solid white;
+}
+
+.temp4 {
+  grid-area: 2 / 2 / 3 / 3; /* Segunda fila, segunda columna */
+  border: 1px solid white;
+}

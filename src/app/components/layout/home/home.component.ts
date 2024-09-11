@@ -21,4 +21,9 @@ export class HomeComponent {
      this.router.navigate(['/humidity']);
   }
 
+  irTempyHume(): void{
+    console.log('ir a tempyhume');
+     this.router.navigate(['/tempyhume']);
+  }
+  
 }

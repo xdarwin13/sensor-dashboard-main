@@ -1,9 +1,6 @@
-<div class="container" style="color: white;">
-  <h2>Temperatura Actual</h2>
-  <p>{{ temperatureData.length > 0 ? temperatureData[temperatureData.length - 1] + ' °C' : 'No disponible' }}</p>
-  <div style="display: block;">
-    <canvas id="temperatureChart"></canvas>
-  </div>
-  <!-- Componente de notificación con plantilla personalizada -->
-  <p-toast key="customToast" position="top-right"></p-toast>
-</div>
+<main>
+  <app-temp1 class="temp1"></app-temp1>
+  <app-temp2 class="temp2"></app-temp2>
+  <app-temp3 class="temp3"></app-temp3>
+  <app-temp4 class="temp4"></app-temp4>
+</main>

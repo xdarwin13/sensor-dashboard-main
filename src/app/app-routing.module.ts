@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: "", component: HomeComponent},
   { path: 'temperature', component: TemperatureComponent },
   { path: 'humidity', component: HumidityComponent },
+  { path: 'tempyhume', component: TEMPYHUMEComponent },
   { path: '', redirectTo: '/temperature', pathMatch: 'full' },
 ];
 
