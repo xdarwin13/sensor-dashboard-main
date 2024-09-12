@@ -98,14 +98,14 @@ export class TEMPYHUME4Component implements OnInit, OnDestroy {
   }
 
   startDataUpdates(): void {
-    this.dataSubscription = interval(3000).subscribe(() => {
+    this.dataSubscription = interval(1000).subscribe(() => {
       this.fetchTemperatureData();
       this.fetchHumidityData();
     });
   }
 
   fetchTemperatureData(): void {
-    this.sensorDataService.getTemperature().subscribe(data => {
+    this.sensorDataService.getTemperature4().subscribe(data => {
       if (this.lastTemperature === null || data.temperature !== this.lastTemperature) {
         this.lastTemperature = data.temperature;
         this.temperatureData.push(data.temperature);
@@ -121,7 +121,7 @@ export class TEMPYHUME4Component implements OnInit, OnDestroy {
   }
 
   fetchHumidityData(): void {
-    this.sensorDataService.getHumidity().subscribe(data => {
+    this.sensorDataService.getHumidity4().subscribe(data => {
       if (this.lastHumidity === null || data.humidity !== this.lastHumidity) {
         this.lastHumidity = data.humidity;
         this.humidityData.push(data.humidity);

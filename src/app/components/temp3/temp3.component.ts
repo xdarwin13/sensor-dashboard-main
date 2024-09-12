@@ -84,12 +84,12 @@ export class TEMP3Component implements OnInit, OnDestroy {
   }
 
   startTemperatureUpdates(): void {
-    this.temperatureSubscription = interval(3000)
+    this.temperatureSubscription = interval(1000)
       .subscribe(() => this.fetchTemperatureData());
   }
 
   fetchTemperatureData(): void {
-    this.sensorDataService.getTemperature().subscribe(data => {
+    this.sensorDataService.getTemperature3().subscribe(data => {
       if (this.lastTemperature === null || data.temperature !== this.lastTemperature) {
         this.lastTemperature = data.temperature;
         this.temperatureData.push(data.temperature);

@@ -10,11 +10,34 @@ export class SensorDataService {
 
   constructor(private http: HttpClient) { }
 
-  getTemperature(): Observable<any> {
+  getTemperature1(): Observable<any> {
     return this.http.get(`${this.baseUrl}/temperature1`);
   }
 
-  getHumidity(): Observable<any> {
+  getHumidity1(): Observable<any> {
     return this.http.get(`${this.baseUrl}/humidity1`);
+  }
+
+  getTemperature2(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/temperature2`);
+  }
+
+  getHumidity2(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/humidity2`);
+  }
+
+  getTemperature3(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/temperature3`);
+  }
+
+  getHumidity3(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/humidity3`);
+  }
+  getTemperature4(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/temperature4`);
+  }
+
+  getHumidity4(): Observable<any> {
+    return this.http.get(`${this.baseUrl}/humidity4`);
   }
 }

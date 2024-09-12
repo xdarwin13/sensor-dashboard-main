@@ -79,12 +79,12 @@ export class HUME4Component implements OnInit, OnDestroy {
   }
 
   startHumidityUpdates(): void {
-    this.humiditySubscription = interval(3000) // Actualiza cada 3 segundos
+    this.humiditySubscription = interval(1000) // Actualiza cada 1 segundos
       .subscribe(() => this.fetchHumidityData());
   }
 
   fetchHumidityData(): void {
-    this.sensorDataService.getHumidity().subscribe(data => {
+    this.sensorDataService.getHumidity4().subscribe(data => {
       // Solo actualiza si el nuevo valor de humedad es diferente del último
       if (this.lastHumidity === null || data.humidity !== this.lastHumidity) {
         this.lastHumidity = data.humidity;
