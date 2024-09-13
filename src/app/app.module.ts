@@ -30,9 +30,6 @@ import { Aside2Component } from './components/layout/aside2/aside2.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
