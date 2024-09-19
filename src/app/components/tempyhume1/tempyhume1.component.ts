@@ -98,7 +98,7 @@ export class TEMPYHUME1Component implements OnInit, OnDestroy {
   }
 
   startDataUpdates(): void {
-    this.dataSubscription = interval(1000).subscribe(() => {
+    this.dataSubscription = interval(5000).subscribe(() => {
       this.fetchTemperatureData();
       this.fetchHumidityData();
     });
@@ -106,7 +106,7 @@ export class TEMPYHUME1Component implements OnInit, OnDestroy {
 
   fetchTemperatureData(): void {
     this.sensorDataService.getTemperature1().subscribe(data => {
-      if (this.lastTemperature === null || data.temperature !== this.lastTemperature) {
+      //if (this.lastTemperature === null || data.temperature !== this.lastTemperature) {
         this.lastTemperature = data.temperature;
         this.temperatureData.push(data.temperature);
         this.chartLabels.push(new Date().toLocaleTimeString());
@@ -116,18 +116,18 @@ export class TEMPYHUME1Component implements OnInit, OnDestroy {
         if (data.temperature >= 40) {
           this.sendRiskNotification();
         }
-      }
+      //}
     });
   }
 
   fetchHumidityData(): void {
     this.sensorDataService.getHumidity1().subscribe(data => {
-      if (this.lastHumidity === null || data.humidity !== this.lastHumidity) {
+      //if (this.lastHumidity === null || data.humidity !== this.lastHumidity) {
         this.lastHumidity = data.humidity;
         this.humidityData.push(data.humidity);
         this.updateChartData();
         console.log("Humedad actualizada:", data.humidity);
-      }
+     // }
     });
   }
 
